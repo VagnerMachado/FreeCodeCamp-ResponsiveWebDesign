@@ -1,0 +1,92 @@
+body
+{
+
+}
+img
+{
+display: block;
+max-width: 90%;
+width: auto;
+margin: 0 auto;
+height: auto;
+padding-top: 30px;
+}
+
+#lion
+{
+display: block;
+width: 60px;
+height: 40px;
+margin: 0 auto;
+height: auto;
+padding-top: 30px;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+
+h1, h2, h4, figcaption
+{
+  margin: auto;
+  width: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1
+{
+font-size: 45px;
+}
+
+figcaption
+{
+font-family: Tahoma;
+font-size: 18px;
+}
+
+p
+{
+font-family: Tahoma;
+line-height: 1.7em;
+width: 80%;
+margin: 0  auto;
+padding: 20px;
+font-size: 18px;
+}
+
+h2, h4
+{
+padding-top: 30px;
+font-size: 25px;
+color: black;
+}
+
+#linkedin
+{
+margin: auto;
+text-align: center;
+}
+
+hr
+{
+max-width: 80%;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
