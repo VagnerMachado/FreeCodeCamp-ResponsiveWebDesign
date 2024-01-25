@@ -1,0 +1,88 @@
+label, select, legend,textarea, p, input
+{
+font-size: 25px;
+}
+
+
+
+label
+{
+display: block;
+padding: 10px;
+}
+
+body
+{
+background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Light-blue-wallpaper-hd-quality.jpg);
+margin: 0 auto;
+max-width: 1000px;
+min-width: 375px;
+width: auto;
+font-size: 1.5em;
+}
+
+fieldset, textarea
+{
+padding: 20px;
+margin: 10px
+}
+#number
+{
+min-width: 200px;
+}
+h1, p
+{
+padding: 20px;
+margin: 0 auto;
+width: auto;
+text-align: center;
+}
+textarea
+{
+margin-top: -10px;
+height: 100px;
+width: 80%;
+min-width: 360px;
+min-height: 100px;
+vertical-align: middle;
+background-color: rgba(255, 255, 255, 0.2)
+}
+
+select, option, input
+{
+background-color: rgba(255, 255, 255, 0.3)
+
+}
+
+input[type="submit"] {
+width: 200px;
+margin-top: 20px;
+}
+
+.center-div
+{
+text-align: center;
+}
+
+#lion
+{
+display: block;
+width: 60px;
+height: 40px;
+margin: 0 auto;
+height: auto;
+padding-top: 30px;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+
+

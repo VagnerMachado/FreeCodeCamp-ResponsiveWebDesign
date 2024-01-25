@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1 id="title">Registration Form</h1>
+<hr>
+<p id="description">Please fill out this form with the required information</p>
+<form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label id="name-label" for="name">  Enter your name:  <input placeholder="Enter your name" id="name" type="text" required /></label>
+    <label id="email-label" for="email">  Enter your email:  <input placeholder="Enter your email" id="email" type="email" required /></label>
+    <label id="number-label" for="number">  Enter your age:  <input placeholder="Enter your age" min="18" max="100" id="number" type="number" required /></label>
+    <label for="dropdown">   Gender   <select id="dropdown">
+      <option>Choose an option</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Non Binary</option>
+    </select></label>
+  </fieldset>
+  <fieldset>
+    <legend>Personality</legend>
+    <label for="radio-one"><input name="personality" id="radio-one" type="radio" value="morning" required />   Morning Person </label>
+    <label for="radio-two"><input name="personality" id="radio-two" type="radio" value="night" required />   Night Owl </label>
+    <label for="radio-three"><input name="personality" id="radio-three" type="radio" value="depends" required />  Varies</label>
+  </fieldset>
+  <fieldset>
+    <legend>Favorite Foods</legend>
+    <label for="check-one"><input name="personality" id="check-one" type="checkbox" value="fast" required />   Fast Foods</label>
+    <label for="check-two"><input name="personality" id="check-two" type="checkbox" value="healthy" required />   Healthy Eats</label>
+    <label for="check-three"><input name="personality" id="check-three" type="checkbox" value="protein" required />   Protein Rich </label>
+  </fieldset>
+  <div class="center-div">
+    <label for="comments"><h3>Add your comments</h3><br><textarea id="comments" name="comments"></textarea></label>
+  <div class="center-div"><input type="submit" value="Send Info" id="submit"/></div>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <img id="lion" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fmrvaudrey.com%2Fwp-content%2Fuploads%2F2020%2F05%2FLion-Icon.png&f=1&nofb=1&ipt=f21c8f351edd01755549c36ef76b57bf3f610f18a83117c87996580c6dcadea9&ipo=images" alt="lion in black and white icons">
+  <p id="linkedin">Designed by <a target="_blank" href="https://www.linkedin.com/in/vagnermachado/">Vagner Machado</a></p>
+
+</form>
+</body>
+</html>
