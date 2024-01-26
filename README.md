@@ -31,4 +31,8 @@ Color-stops allow you to fine-tune where colors are placed along the gradient li
 For example, in this red-black gradient, the transition from red to black takes place at the 90% point along the gradient line, so red takes up most of the available space:
 `linear-gradient(90deg, red 90%, black);`
 
-git commit --amend --no-edit --date="Thu Jan 18 20:00:00 2024 -0600"
+## Comit in other date
+`git commit --amend --no-edit --date="Thu Jan 18 20:00:00 2024 -0600"`
+
+## Box Model    
+![Box Model](https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-3.png "Box Model")

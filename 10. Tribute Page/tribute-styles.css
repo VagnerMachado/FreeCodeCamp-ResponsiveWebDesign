@@ -32,10 +32,10 @@ a:hover {
 
 a:active {
   color: black;
-
+}
 h1, h2, h4, figcaption
 {
-  margin: auto;
+  margin: 0 auto;
   width: auto;
   text-align: center;
   padding: 20px;
