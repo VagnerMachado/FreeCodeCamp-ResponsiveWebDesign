@@ -34,7 +34,11 @@ For example, in this red-black gradient, the transition from red to black takes 
 ## Comit in other date
 `git commit --amend --no-edit --date="Thu Jan 18 20:00:00 2024 -0600"`
 
-## Box Model    
+## Box Model  
+By default, the browser includes the border and padding when determining an element's size. 
+
+To solve this, reset the box model by creating a `*` selector and giving it a `box-sizing` property of `border-box`.
+
 ![Box Model](https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-3.png "Box Model")
 
 ## CSS References
