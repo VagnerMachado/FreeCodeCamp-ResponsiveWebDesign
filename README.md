@@ -61,3 +61,9 @@ The `align-items` property positions the flex content along the cross axis. In t
 Notice how some images may have become distorted. This is because the images have different aspect ratios. Rather than setting each aspect ratio individually, you can use the `object-fit` property to determine how images should behave.
 
 The `gap` CSS shorthand property sets the gaps, also known as gutters, between rows and columns. The gap property and its row-gap and column-gap sub-properties provide this functionality for flex, grid, and multi-column layout. 
+
+## CSS Position
+
+CSS positioning lets you set how you want an element to be positioned in the browser. It has a position property you can set to static, absolute, relative, sticky or fixed.
+Once you set the position property of the element, you can move the element around by setting a pixel or a percentage value for one or more of the top, right, left, or bottom properties.
+static is the default positioning for all elements. If you assign it to an element, you won't be able to move it around with top, right, left, or bottom.
