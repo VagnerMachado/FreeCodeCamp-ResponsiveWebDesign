@@ -32,7 +32,7 @@ For example, in this red-black gradient, the transition from red to black takes 
 `linear-gradient(90deg, red 90%, black);`
 
 ## Comit in other date
-`	"`
+`git commit --amend --no-edit --date="Mon Feb 05 20:00:00 2024 -0600"`
 
 ## Box Model  
 By default, the browser includes the border and padding when determining an element's size. 
@@ -67,3 +67,5 @@ The `gap` CSS shorthand property sets the gaps, also known as gutters, between r
 CSS positioning lets you set how you want an element to be positioned in the browser. It has a position property you can set to static, absolute, relative, sticky or fixed.
 Once you set the position property of the element, you can move the element around by setting a pixel or a percentage value for one or more of the top, right, left, or bottom properties.
 static is the default positioning for all elements. If you assign it to an element, you won't be able to move it around with top, right, left, or bottom.
+
+The transform property allows you to modify the shape, position, and size of an element without changing the layout or affecting the surrounding elements. It has functions such as translate(), rotate(), scale(), skew(), and matrix()
