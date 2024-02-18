@@ -69,3 +69,16 @@ Once you set the position property of the element, you can move the element arou
 static is the default positioning for all elements. If you assign it to an element, you won't be able to move it around with top, right, left, or bottom.
 
 The transform property allows you to modify the shape, position, and size of an element without changing the layout or affecting the surrounding elements. It has functions such as translate(), rotate(), scale(), skew(), and matrix()
+
+## Media Queries
+
+The `@media` at-rule, also known as a media query, is used to conditionally apply CSS. Media queries are commonly used to apply CSS based on the `viewport` width using the `max-width` and `min-width` properties.
+
+In the below example the padding is applied to the .card class when the `viewport` is `960px` wide and below.
+```CSS
+@media (max-width: 960px) {   
+  .card {    
+    padding: 2rem;   
+  }     
+}   
+```
