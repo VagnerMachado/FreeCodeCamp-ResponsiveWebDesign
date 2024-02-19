@@ -2,3 +2,18 @@
 {
     box-sizing: border-box;
 }
+
+main
+{
+  border-color: 10px solid black;
+}
+
+#navbar
+{
+  float: left;
+}
+
+#main-doc
+{
+  float: right;
+}
