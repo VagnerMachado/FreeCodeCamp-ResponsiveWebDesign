@@ -82,3 +82,12 @@ In the below example the padding is applied to the .card class when the `viewpor
   }     
 }   
 ```
+
+Logical operators can be used to construct more complex media queries. The and logical operator is used to query two media conditions.
+
+For example, a media query that targets a display width between `500px` and `1000px` would be:
+```CSS
+@media (min-width: 500px) and (max-width: 1000px){
+
+}
+```
