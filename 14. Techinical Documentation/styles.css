@@ -6,6 +6,7 @@
 main
 {
   border-color: 10px solid black;
+  
 }
 
 #navbar
@@ -20,9 +21,9 @@ main
   float: right;
 }
 
-@media (max-width: 500px)
+@media(min-width: 500px)
 {
-  .navlink
+  #navbar
   {
    background-color: yellow;
    color: green;
