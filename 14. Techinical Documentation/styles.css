@@ -13,12 +13,14 @@ main
 {
   display: block;
   float: left;
+  position: relative;;
 }
 
 #main-doc
 {
   display: block;
   float: right;
+  position: relative;
 }
 
 @media(min-width: 500px)
