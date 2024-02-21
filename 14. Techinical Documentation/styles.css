@@ -10,10 +10,22 @@ main
 
 #navbar
 {
+  display: block;
   float: left;
 }
 
 #main-doc
 {
+  display: block;
   float: right;
+}
+
+@media (max-width: 500px)
+{
+  .navlink
+  {
+   background-color: yellow;
+   color: green;
+  }
+ 
 }
