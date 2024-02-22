@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+      <header>This is the header for the NavBar</header>
+<ul>
+  <li><a class="nav-link" href="#Section_A">Section A</a></li>
+  <li><a class="nav-link" href="#Section_B">Section B</a></li>
+  <li><a class="nav-link" href="#Section_C">Section C</a></li>
+  <li><a class="nav-link" href="#Section_D">Section D</a></li>
+  <li><a class="nav-link" href="#Section_E">Section E</a></li>
+</ul>
+    </nav>
+  <main id="main-doc">
+<section class="main-section" id="Section_A">
+<header>Section A</header>
+<p>This is the first paragraph for Section A</p>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+</ul>
+<code>Code Sample A</code>
+<p>This is another paragraph for Section A</p>
+</section>
+<section class="main-section" id="Section_B">
+ <header>Section B</header>
+ <p>First pagagraph for the Section B</p>
+<code>Sample Code B</code>
+<p>This is another paragraph for Section B</p> 
+</section>
+<section class="main-section" id="Section_C">
+ <header>Section C</header> 
+  <p>First pagagraph for the Section C</p>
+<code>Sample Code C</code>
+<p>This is another paragraph for Section C</p> 
+</section>
+<section class="main-section" id="Section_D">
+ <header>Section D</header> 
+  <p>First pagagraph for the Section D</p>
+<code>Sample Code D</code>
+<p>This is another paragraph for Section D</p> 
+</section>
+<section class="main-section" id="Section_E">
+<header>Section E</header> 
+ <p>First pagagraph for the Section E</p>
+<code>Sample Code E</code>
+<p>This is another paragraph for Section E</p> 
+</section>
+</main>
+</body>
+</html>
