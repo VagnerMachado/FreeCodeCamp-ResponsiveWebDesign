@@ -2,13 +2,12 @@
     box-sizing: border-box;
 }
 
-h1,
-nav>header {
+h1, nav > header {
     text-align: center;
 }
 
 html {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -23,12 +22,17 @@ main {
     line-height: 35px;
 }
 
+.nav-link
+{
+    text-align: center;
+}
+
 #navbar {
     display: block;
     float: left;
     position: fixed;
     width: 190px;
-    background-color: rgba(173, 216, 230, 0.5);
+    background-color: rgba(173, 216, 230, 0.3);
     padding-top: 20px;
     padding-bottom: 10px;
     margin-left: 10px;
@@ -36,6 +40,7 @@ main {
     margin-bottom: 20px;
     height: 100%;
     border-left: 3px solid darkblue;
+    border-radius: 20px;
 }
 
 #main-doc {
@@ -50,25 +55,30 @@ main {
        width: 98%;
     }
 
-
 }
 p, li {
     width: 90%;
 }
 
-p{
+.snip
+{
+    font-family: monospace;
+}
+p, .block, ol, h3{
     margin-left: 40px; ;
 }
 
-tr{
-    margin-left: 30px;
+table{
+    margin-left: 40px;
 }
 
 hr
 {
     width: 95%;
     background-color: darkblue;
-    height: 3px;
+    color: darkblue;
+    height: 5px;
+    margin-left: -10px;
 }
 
 
@@ -78,15 +88,17 @@ code {
 
 header> h2, h2 {
     color: darkblue;
+    text-align: center;
 }
 
 div {
-    background-color: rgba(173, 216, 230, 0.5);
+    background-color: rgba(173, 216, 230, 0.3);
     padding: 10px 0px 10px 40px;
     border-left: 3px solid darkblue;
     margin-right: -20px;
     border-right: -20px;
     width: 90%;
+    border-radius: 30px;
 }
 
 div>div {
@@ -103,7 +115,7 @@ a {
 }
 
 body {
-    background-image: url("background.jpg");
+    background-image: url("background2.jpg");
 }
 
 #lion {
@@ -120,4 +132,14 @@ body {
 margin: auto;
 text-align: center;
 padding: 20px;
+}
+
+#logo
+{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 40px;
+    border-left: 3px solid darkblue;
 }
