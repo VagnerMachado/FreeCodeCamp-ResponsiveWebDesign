@@ -1,43 +1,102 @@
-*
-{
+* {
     box-sizing: border-box;
 }
 
-h1{
+h1,
+nav>header {
     text-align: center;
 }
 
-html{
+html {
     font-size: 1.2rem;
 }
-main
-{
-  border-color: 10px solid black;
-  
+
+main {
+    border-color: 10px solid black;
+
 }
 
-#navbar
+.nav-link-list
 {
-  display: block;
-  float: left;
-  position: fixed;
-  width: 180px;
+    list-style-type: none;
+    line-height: 35px;
 }
 
-#main-doc
-{
-  display: block;
-  float: right;
-  position: absolute;
-  margin-left: 200px;
+#navbar {
+    display: block;
+    float: left;
+    position: fixed;
+    width: 190px;
+    background-color: rgba(173, 216, 230, 0.5);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    border-left: 3px solid darkblue;
 }
 
-@media(min-width: 500px)
+#main-doc {
+    display: block;
+    float: right;
+    position: absolute;
+    margin-left: 220px;
+}
+
+@media(max-width: 300px) {
+    div {
+       width: 98%;
+    }
+
+
+}
+p, li {
+    width: 90%;
+}
+
+p{
+    margin-left: 40px; ;
+}
+
+hr
 {
-  #navbar
-  {
-   background-color: yellow;
-   color: green;
-  }
- 
+    width: 95%;
+    background-color: darkblue;
+    height: 3px;
+}
+
+
+code {
+    background-color: lightgray;
+}
+
+header> h2, h2 {
+    color: darkblue;
+}
+
+div {
+    background-color: rgba(173, 216, 230, 0.5);
+    padding: 10px 0px 10px 40px;
+    border-left: 3px solid darkblue;
+    margin-right: -20px;
+    border-right: -20px;
+    width: 90%;
+}
+
+div>div {
+    background-color: rgba(173, 216, 230, 0.0);
+    border-left: none;
+}
+
+a:hover,
+a:active,
+a:visited,
+a {
+    color: black;
+    text-decoration:none;
+}
+
+body {
+    background-image: url("background.jpg");
 }

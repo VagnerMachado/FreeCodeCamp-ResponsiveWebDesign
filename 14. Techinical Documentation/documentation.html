@@ -1,119 +1,514 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <title>Python Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://gss-technology.com/wp-content/uploads/2021/07/04.png">
+    <title>Python Introduction</title>
 </head>
+
 <body>
-  <nav id="navbar">
-      <header>Jump around topics</header>
-<ul>
-  <li><a class="nav-link" href="#What_is_Python?">What is Python?</a></li>
-  <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
-  <li><a class="nav-link" href="#Section_C">Section C</a></li>
-  <li><a class="nav-link" href="#Section_D">Section D</a></li>
-  <li><a class="nav-link" href="#Section_E">Section E</a></li>
-</ul>
+    <nav id="navbar">
+        <header><h3>Topics</h3></header>
+        <ul class="nav-link-list">
+            <li><a class="nav-link" href="#Overview">Overview</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Python_Numbers">Python Numbers</a></li>
+            <li><a class="nav-link" href="#Strings">Strings</a></li>
+            <li><a class="nav-link" href="#Lists">Lists</a></li>
+        </ul>
     </nav>
-  <main id="main-doc">
-    <h1>Intro to Python</h1>
-<section class="main-section" id="What_is_Python?">
+    <main id="main-doc">
+        <h1>Intro to Python</h1>
+        <hr>
+        <section class="main-section" id="Overview">
+            <header>
+                <h2>Overview</h2>
+            </header>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <p>It is flexible and some usages include:</p>
+            <ol>
+                <li>web development (server-side)</li>
+                <li>software development</li>
+                <li>mathematics</li>
+                <li>system scripting</li>
+            </ol>
+            <h3>What can Python do?</h3>
+            <p>
+                To cite a few of an evergrowing list of usages, Python can be used on a server to create web
+                applications and alongside software to create workflows. It can also connect to database systems, read
+                and modify files, and handle big data and perform complex mathematics. Lastly, Python can be used for
+                rapid prototyping, or for production-ready software development. As described, one can see how Python is
+                flexible to encompass a wide array of usages in modern systems.
+            </p>
+            <h3>Why Python?</h3>
+            <p>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc) and has a simple syntax
+                similar to the English language. It has syntax that allows developers to write programs with fewer lines
+                than some other programming languages. It runs on an interpreter system, meaning that code can be
+                executed as soon as it is written, making it a great language for prototyping. Moreover, Python can be
+                treated in a procedural way, an object-oriented way or a functional way.</p>
+
+            <h3>Good to know</h3>
+            <p>The most recent major version of Python is Python 3, which we shall be using in this sample documentation
+                page. However, Python 2, although not being updated with anything other than security updates, is still
+                quite popular. It is possible to write Python in an Integrated Development Environment, such as Thonny,
+                Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python
+                files.</p>
+
+            <h3>Python Syntax</h3>
+            <ul>
+                <li>Python was designed for readability, and has some similarities to the English language with
+                    influence from mathematics.</li>
+                <li>Python uses new lines to complete a command, as opposed to other programming languages which often
+                    use semicolons or parentheses.</li>
+                <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops,
+                    functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+            </ul>
+            <p>Python's intuitive grammar can be seen, for example, in a line of code that prints some text
+                <code>print("Hello, World!")</code>
+            </p>
+            <p>Given that Python is a language with many features, writing an extensive tutorial would be a very time
+                consumin endeavor, filled with research, trial and error, library explorations and such. With that in
+                mind, this intro to Python aims to expose the reader to some important data types available. Happy
+                Coding! </p>
+        </section>
+        <hr>
+        <section class="main-section" id="Data_Types">
+            <header>
+                <h2>Data Types</h2>
+            </header>
+            <p>In programming, data type is an important concept. Variables can store data of different types, and
+                different types can do different things.</p>
+            <p>Python has the following data types built-in by default, in these categories:</p>
+            <table>
+                <tr>
+                    <td>Text Type:</td>
+                    <td><code>str</code></td>
+                </tr>
+                <tr>
+                    <td>Numeric Types:</td>
+                    <td><code>int</code>, <code>float</code>,
+                        <code>complex</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sequence Types:</td>
+                    <td><code>list</code>, <code>tuple</code>,
+                        <code>range</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mapping Type:</td>
+                    <td><code>dict</code></td>
+                </tr>
+                <tr>
+                    <td>Set Types:</td>
+                    <td><code>set</code>, <code>frozenset</code></td>
+                </tr>
+                <tr>
+                    <td>Boolean Type:</td>
+                    <td><code>bool</code></td>
+                </tr>
+                <tr>
+                    <td>Binary Types:</td>
+                    <td><code>bytes</code>, <code>bytearray</code>,
+                        <code>memoryview</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>None Type:</td>
+                    <td><code>NoneType</code></td>
+                </tr>
+            </table>
+            <p>You can get the data type of any object by using the <code>type()</code> function:</p>
+            <code>
+                x = 5 <br>
+                print(type(x))
+            </code>
+        </section>
+        <hr>
+        <section class="main-section" id="Python_Numbers">
+            <header>
+                <h2>Python Numbers</h2>
+            </header>
+            <p>There are three numeric types in Python:</p>
+            <ul>
+                <li><code>int</code></li>
+                <li><code>float</code></li>
+                <li><code>complex</code></li>
+            </ul>
+            <p>Variables of numeric types are created when you assign a value to them:</p>
+            <div>
+                <h4>Example</h4>
+                <div>
+                    x = 1&nbsp;&nbsp;&nbsp;
+                    # int<br>y = 2.8&nbsp; # float<br>z = 1j&nbsp;&nbsp; # complex<br>
+                </div>
+            </div>
+
+            <p>To verify the type of any object in Python, use the <code>type()</code> function:</p>
+
+            <div>
+                <h4>Example</h4>
+                <div>
+                    print(type(x))<br>print(type(y))<br>print(type(z))<br>
+                </div>
+            </div>
 
 
 
-<header><h3>What is Python?</h3></header>
-<p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
-<p>It is flexible and some usages include:</p>
-<ol>
-    <li>web development (server-side)</li>
-    <li>software development</li>
-    <li>mathematics</li>
-    <li>system scripting</li>
-</ol>
-<h3>What can Python do?</h3>
-<p>
-    To cite a few of an evergrowing list of usages, Python can be used on a server to create web applications and alongside software to create workflows. It can also connect to database systems, read and modify files, and handle big data and perform complex mathematics. Lastly, Python can be used for rapid prototyping, or for production-ready software development. As described, one can see how Python is flexible to encompass a wide array of usages in modern systems. 
-</p>
-<h3>Why Python?</h3>
-<p>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc) and has a simple syntax similar to the English language. It has syntax that allows developers to write programs with fewer lines than some other programming languages. It runs on an interpreter system, meaning that code can be executed as soon as it is written, making it a great language for prototyping. Moreover, Python can be treated in a procedural way, an object-oriented way or a functional way.</p>
+            <h3>Int</h3>
 
-<h3>Good to know</h3>
-<p>The most recent major version of Python is Python 3, which we shall be using in this sample documentation page. However, Python 2, although not being updated with anything other than security updates, is still quite popular. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</p>
+            <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
 
-<h3>Python Syntax</h3>
-<ul>
-<li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
-<li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
-<li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
-</ul>
-<p>Python's intuitive grammar can be seen, for example, in a line of code that prints some text <code>print("Hello, World!")</code></p>
-<p>Given that Python is a language with many features, writing an extensive tutorial would be a very time consumin endeavor, filled with research, trial and error, library explorations and such. With that in mind, this intro to Python aims to expose the reader to some important data types available. Happy Coding! </p>
-</section>
+            <div>
+                <h4>Example</h4>
+                <p>Integers:</p>
+                <div>
+                    x = 1<br>y = 35656222554887711<br>z =
+                    -3255522<br><br>print(type(x))<br>print(type(y))<br>print(type(z))</div>
+            </div>
 
 
-<section class="main-section" id="Built_In_Data_Types">
- <header>Built in Data Types</header>
- <h3></h>
- <p>In programming, data type is an important concept.</p>
- <p>Variables can store data of different types, and different types can do 
- different things.</p>
- <p>Python has the following data types built-in by default, in these categories:</p>
- <table>
-   <tr>
-     <td>Text Type:</td>
-     <td><code>str</code></td>
-   </tr>
-   <tr>
-     <td>Numeric Types:</td>
-     <td><code>int</code>, <code>float</code>,
-     <code>complex</code></td>
-   </tr>
-   <tr>
-     <td>Sequence Types:</td>
-     <td><code>list</code>, <code>tuple</code>, 
-     <code>range</code></td>
-   </tr>
-   <tr>
-     <td>Mapping Type:</td>
-     <td><code>dict</code></td>
-   </tr>
-   <tr>
-     <td>Set Types:</td>
-     <td><code>set</code>, <code>frozenset</code></td>
-   </tr>
-   <tr>
-     <td>Boolean Type:</td>
-     <td><code>bool</code></td>
-   </tr>
-   <tr>
-     <td>Binary Types:</td>
-     <td><code>bytes</code>, <code>bytearray</code>, 
-     <code>memoryview</code></td>
-   </tr>
-   <tr>
-     <td>None Type:</td>
-     <td><code>NoneType</code></td>
-   </tr>
- </table>
-</section>
-<section class="main-section" id="Section_C">
- <header>Section C</header> 
-  <p>First pagagraph for the Section C</p>
-<code>Sample Code C</code>
-<p>This is another paragraph for Section C</p> 
-</section>
-<section class="main-section" id="Section_D">
- <header>Section D</header> 
-  <p>First pagagraph for the Section D</p>
-<code>Sample Code D</code>
-<p>This is another paragraph for Section D</p> 
-</section>
-<section class="main-section" id="Section_E">
-<header>Section E</header> 
- <p>First pagagraph for the Section E</p>
-<code>Sample Code E</code>
-<p>This is another paragraph for Section E</p> 
-</section>
-</main>
+
+            <h3>Float</h3>
+
+            <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Floats:</p>
+                <div>
+                    x = 1.10<br>y = 1.0<br>z = -35.59<br><br>print(type(x))<br>print(type(y))<br>print(type(z))</div>
+            </div>
+
+            <p>Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Floats:</p>
+                x = 35e3<br>y = 12E4<br>z = -87.7e100<br><br>print(type(x))<br>print(type(y))<br>
+                print(type(z))
+            </div>
+            <h3>Complex</h3>
+
+            <p>Complex numbers are written with a &quot;j&quot; as the imaginary part:</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Complex:</p>
+                <div>
+                    x = 3+5j<br>y = 5j<br>z = -5j<br><br>print(type(x))<br>print(type(y))<br>
+                    print(type(z))</div>
+            </div>
+
+
+
+            <h3>Type Conversion</h3>
+
+            <p>You can convert from one type to another with the <code>int()</code>,
+                <code>float()</code>, and <code>complex()</code> methods:
+            </p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Convert from one type to another:</p>
+                <div>
+                    x = 1&nbsp;&nbsp;&nbsp; # int<br>y = 2.8&nbsp; # float<br>z = 1j&nbsp;&nbsp; #
+                    complex<br><br>#convert from int to float:<br>
+                    a = float(x)<br><br>#convert from float to int:<br>
+                    b = int(y)<br><br>#convert from int to complex:<br>c = complex(x)<br><br>print(a)<br>print(b)<br>
+                    print(c)<br><br>print(type(a))<br>print(type(b))<br>
+                    print(type(c))</div>
+            </div>
+            <p><strong>Note:</strong> You cannot convert complex numbers into another number type.</p>
+        </section>
+        <hr><br>
+        <section class="main-section" id="Strings">
+            <header>
+                <h3>Strings</h3>
+            </header>
+
+
+            <p>Strings in python are surrounded by either single quotation marks, or double quotation marks.</p>
+            <p><span>'hello'</span> is the same as <span>"hello"</span>.</p>
+            <p>You can display a string literal with the <code>print()</code> function:</p>
+            <div>
+                <h4>Example</h4>
+                <div>
+                    print(&quot;Hello&quot;)<br>
+                    print('Hello')
+                </div>
+            </div>
+            <h3>Assign String to a Variable</h3>
+            <p>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+            </p>
+            <div>
+                <h4>Example</h4>
+                <div>
+                    a = "Hello&quot;<br>print(a)</div>
+            </div>
+            <h3>Multiline Strings</h3>
+
+            <p>You can assign a multiline string to a variable by using three quotes:</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>You can use three double quotes:</p>
+                <div>
+                    a = &quot;&quot;&quot;Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do
+                    eiusmod tempor incididunt<br>ut labore et dolore magna aliqua.&quot;&quot;&quot;<br>print(a)
+                </div>
+            </div>
+            <p>Or three single quotes:</p>
+            <div>
+                <h4>Example</h4>
+                <div>
+                    a = '''Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do eiusmod tempor
+                    incididunt<br>ut labore et dolore magna aliqua.'''<br>print(a)
+                </div>
+            </div>
+            <div>
+                <p><strong>Note:</strong> in the result, the line breaks are inserted at the same position as in the
+                    code.</p>
+            </div>
+            <h3>Strings are Arrays</h3>
+
+            <p>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode
+                characters.</p>
+            <p>However, Python does not have a character data type, a single character is simply a string with a length
+                of 1.</p>
+            <p>Square brackets can be used to access elements of the string.</p>
+            <div>
+                <h4>Example</h4>
+                <p>Get the character at position 1 (remember that the first character has the
+                    position 0):</p>
+                <div>
+                    a = "Hello, World!"<br>
+                    print(a[1])
+                </div>
+
+            </div>
+
+
+            <h3>Looping Through a String</h3>
+
+            <p>Since strings are arrays, we can loop through the characters in a string, with a <code>for</code> loop.
+            </p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Loop through the letters in the word &quot;banana&quot;:</p>
+                <div>
+                    for x in &quot;banana&quot;:<br>&nbsp; print(x)
+                </div>
+            </div>
+
+            <h3>String Length</h3>
+
+            <p>To get the length of a string, use the <code>len()</code> function.</p>
+            <div>
+                <h4>Example</h4>
+                <p>The <code>len()</code> function returns the length of a string:</p>
+                <div>
+                    a = "Hello, World!"<br>
+                    print(len(a))
+                </div>
+            </div>
+
+            <h3>Check String</h3>
+
+            <p>To check if a certain phrase or character is present in a string, we can use
+                the keyword
+                <code>in</code>.
+            </p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Check if &quot;free&quot; is present in the following text:</p>
+                <div>
+                    txt = "The best things in life are free!&quot;<br>print(&quot;free&quot; in txt)<br>
+                </div>
+            </div>
+
+            <p>Use it in an <code>if</code> statement:</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Print only if &quot;free&quot; is present:</p>
+                <div>
+                    txt = "The best things in life are free!&quot;<br>if &quot;free&quot; in txt:<br>&nbsp;
+                    print(&quot;Yes, 'free' is present.&quot;)
+                </div>
+            </div>
+            <p>Learn more about If statements in our <a href="python_conditions.asp">Python
+                    If...Else</a> chapter.</p>
+
+
+            <h3>Check if NOT</h3>
+
+            <p>To check if a certain phrase or character is NOT present in a string, we can use
+                the keyword <code>not in</code>.</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Check if &quot;expensive&quot; is NOT present in the following text:</p>
+                <div>
+                    txt = "The best things in life are free!&quot;<br>print(&quot;expensive&quot; not in txt)
+                </div>
+            </div>
+
+            <p>Use it in an <code>if</code> statement:</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>print only if &quot;expensive&quot; is NOT present:</p>
+                <div>
+                    txt = "The best things in life are free!&quot;<br>if &quot;expensive&quot; not in txt:<br>&nbsp;
+                    print(&quot;No, 'expensive' is NOT present.&quot;)
+                </div>
+            </div>
+
+        </section>
+        <br>
+        <hr>
+        <section class="main-section" id="Lists">
+            <header>
+                <h2>Lists</h2>
+            </header>
+
+            <p>Lists are used to store multiple items in a single variable.</p>
+            <p>Lists are one of 4 built-in data types in Python used to store collections of
+                data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+            </p>
+            <p>Lists are created using square brackets:</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Create a List:</p>
+                <div>
+                    thislist = ["apple", "banana", "cherry"]<br>
+                    print(thislist)
+                </div>
+            </div>
+            <h3>List Items</h3>
+            <p>List items are ordered, changeable, and allow duplicate values.</p>
+            <p>List items are indexed, the first item has index <code>[0]</code>, the second item has index <code>[1]</code> etc.</p>
+            <h3>Ordered</h3>
+            <p>When we say that lists are ordered, it means that the items have a defined order, and that order will not change.</p>
+            <p>If you add new items to a list,
+                the new items will be placed at the end of the list.</p>
+            <div>
+                <p><strong>Note:</strong> There are some <a href="python_lists_methods.asp">list methods</a> that will
+                    change the order, but in general: the order of the items will not change.</p>
+            </div>
+            <h3>Changeable</h3>
+            <p>The list is changeable, meaning that we can change, add, and remove items in a list after it has been
+                created.</p>
+            <h3>Allow Duplicates</h3>
+            <p>Since lists are indexed, lists can have items with the same value:</p>
+            <div>
+                <h4>Example</h4>
+                <p>Lists allow duplicate values:</p>
+                <div>
+                    thislist = ["apple", "banana", "cherry", "apple", "cherry"]<br>
+                    print(thislist)
+                </div>
+            </div>
+            <h3>List Length</h3>
+            <p>To determine how many items a list has, use the <code>len()</code> function:</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Print the number of items in the list:</p>
+                <div>
+                    thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+                    print(len(thislist))
+                </div>
+            </div>
+
+            <h3>List Items - Data Types</h3>
+
+            <p>List items can be of any data type:</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>String, int and boolean data types:</p>
+                <div>
+                    list1 = ["apple", "banana", "cherry"]<br>
+                    list2 = [1, 5, 7, 9, 3]<br>
+                    list3 = [True, False, False]
+                </div>
+            </div>
+
+            <p>A list can contain different data types:</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>A list with strings, integers and boolean values:</p>
+                <div>
+                    list1 = ["abc", 34, True, 40, "male"]
+                </div>
+            </div>
+
+
+            <h3>type()</h3>
+
+            <p>From Python's perspective, lists are defined as objects with the data type 'list':</p>
+
+            <div class="w3-codeline notranslate">
+                &lt;class 'list'&gt;
+            </div>
+
+            <div>
+                <h4>Example</h4>
+                <p>What is the data type of a list?</p>
+                <div>
+                    mylist = ["apple", "banana", "cherry"]<br>
+                    print(type(mylist))
+                </div>
+            </div>
+            <h3>The list() Constructor</h3>
+
+            <p>It is also possible to use the <span>list()</span> constructor when creating a
+                new list.</p>
+
+            <div>
+                <h4>Example</h4>
+                <p>Using the <code>list()</code> constructor to make a List:</p>
+                <div>
+                    thislist = list(("apple", "banana", "cherry")) # note the double round-brackets<br>
+                    print(thislist)
+                </div>
+            </div>
+
+
+            <h3>Python Collections (Arrays)</h3>
+            <p>There are four collection data types in the Python programming language:</p>
+            <ul>
+                <li><strong>List</strong> is a collection which is ordered and changeable. Allows duplicate members.
+                </li>
+                <li><strong>Tuple</strong> is a collection which is ordered and unchangeable. Allows duplicate members.
+                </li>
+                <li><strong>Set</strong> is a collection which is unordered, unchangeable*, and unindexed. No duplicate
+                    members.</li>
+                <li><strong>Dictionary</strong> is a collection which is ordered** and changeable. No duplicate members.
+                </li>
+            </ul>
+
+            <div>
+                <p>*Set <em>items</em> are unchangeable, but you can remove and/or add items
+                    whenever you like.</p>
+                <p>**As of Python version 3.7, dictionaries are <em>ordered</em>.
+                    In Python 3.6 and earlier, dictionaries are <em>unordered</em>.</p>
+            </div>
+
+            <p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the
+                right type for a particular data set could mean retention of meaning, and, it could mean an increase in
+                efficiency or security.</p>
+        </section>
+        <hr>
+    </main>
 </body>
-</html>f
+
+</html>
