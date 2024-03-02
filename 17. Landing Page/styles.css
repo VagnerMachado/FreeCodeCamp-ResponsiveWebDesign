@@ -1,0 +1,86 @@
+/* Styles for header */
+#header {
+    background-color: rgb(59, 85, 153);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 1rem;
+    width: 90%;
+  }
+
+  #header > img{
+    float: left;
+    border: 3px solid black;
+  }
+  
+  /* Styles for navigation */
+  #nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto auto;
+    border: 3px solid black;
+    padding-top: 2rem;
+  }
+  
+  #video-div
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Styles for sections */
+  section {
+    padding: 20px;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 400px) {
+    /* Example responsive styles */
+        #nav-bar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+  }
+  
+  /* Flexbox example */
+  #form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #form label,
+  #form input {
+    margin-bottom: 3rem;
+  }
+  #submit
+  {
+    width: 10rem;
+  }
+
+  .form-div
+  {
+   width: 80%;
+   text-align: center;
+   border: 1px solid grey; 
+   margin: auto;
+   padding: 1rem
+  }
+
+  #email
+  {
+    width: 20rem;
+    min-width: 10rem;
+    max-width: 60%;
+    text-align: center;
+  }
+  
