@@ -12,15 +12,7 @@ height: auto;
 padding-top: 30px;
 }
 
-#lion
-{
-display: block;
-width: 60px;
-height: 40px;
-margin: 0 auto;
-height: auto;
-padding-top: 30px;
-}
+
 
 a:visited {
   color: black;
@@ -73,6 +65,16 @@ color: black;
 {
 margin: auto;
 text-align: center;
+}
+
+#lion
+{
+display: block;
+width: 60px;
+height: 40px;
+margin: 0 auto;
+height: auto;
+padding-top: 30px;
 }
 
 hr
