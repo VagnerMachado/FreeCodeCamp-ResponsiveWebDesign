@@ -9,8 +9,12 @@ h1, h2
 {
   height: 100vh;
   border: 1px solid black;
-  margin: 3px;
   min-width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30vh;
 }
 
 #projects
@@ -18,7 +22,35 @@ h1, h2
   border: 1px solid red;
   margin: 3px;
   min-width: 80%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+.project-tile > img
+{
+width: 300px;
+height: 180px;
+object-fit: cover;
+margin: 1rem;
+
+}
+
+.project-tile
+{
+
+border: 1px solid gray;
+border-radius: 7px;
+margin: 1rem;
+background-color: white;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
 
 #git
 {
@@ -46,9 +78,7 @@ body
 display: flex;
 flex-direction: column;
 align-items: center;
+min-width: 270px;
+background-color: aliceblue;
 }
 
-@media (max-width: 400px)
-{
-
-}
