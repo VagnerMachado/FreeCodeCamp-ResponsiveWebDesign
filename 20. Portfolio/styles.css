@@ -15,6 +15,7 @@ h1, h2
   flex-direction: column;
   align-items: center;
   padding-top: 30vh;
+ 
 }
 
 #projects
@@ -73,6 +74,10 @@ header
     top: 0;
 } 
 
+.description
+{
+    padding: 5px;
+}
 body
 {
 display: flex;
@@ -80,6 +85,22 @@ flex-direction: column;
 align-items: center;
 min-width: 270px;
 background-color: aliceblue;
+font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+font-weight: normal;
+}
+#linkedin
+{
+margin: auto;
+text-align: center;
+}
+
+#lion
+{
+display: block;
+width: 60px;
+height: auto;
+margin: 0 auto;
+padding-top: 30px;
 }
 
 @media (max-width: 400px)
