@@ -82,3 +82,20 @@ min-width: 270px;
 background-color: aliceblue;
 }
 
+@media (max-width: 400px)
+{
+    .project-tile > img
+    {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin: 2rem;
+    }
+    #nav-items
+{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 1rem;
+}
+}
