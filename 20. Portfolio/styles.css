@@ -5,22 +5,41 @@ h1, h2
   text-align: center;
 }
 
+
 #welcome-section
 {
   height: 100vh;
-  border: 1px solid black;
   min-width: 80%;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30vh;
- 
+  background-color: rgba(240, 248, 255, 0.9);
+  margin-bottom: 1rem;
+  border-radius: 3rem;
+}
+
+#foot
+{
+  min-width: 70%;
+  margin: 2rem;
+  background-color: rgba(240, 248, 255, 0.9);
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+#pic
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: -2rem;
+    width: 10rem;
+    height: auto;
 }
 
 #projects
 {
-  border: 1px solid red;
   margin: 3px;
   min-width: 80%;
   max-width: 80%;
@@ -28,6 +47,8 @@ h1, h2
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: rgba(240, 248, 255, 0.9);
+  border-radius: 3rem;
 }
 
 .project-tile > img
@@ -50,7 +71,8 @@ background-color: white;
 
 .break {
     flex-basis: 100%;
-    height: 0;
+    height: 1rem;
+
   }
 
 #git
@@ -69,24 +91,27 @@ background-color: white;
 header
 {
     position: fixed;
-    background-color: lightskyblue;
-    min-width: 80%;
+    background-color: rgb(135, 206, 250);
+    min-width: 85%;
     top: 0;
+    border-radius: 3rem;
 } 
 
 .description
 {
     padding: 5px;
 }
+
 body
 {
 display: flex;
 flex-direction: column;
 align-items: center;
 min-width: 270px;
-background-color: aliceblue;
+background: url(https://wallpaperaccess.com/full/1614637.jpg);
 font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 font-weight: normal;
+
 }
 #linkedin
 {
@@ -100,7 +125,6 @@ display: block;
 width: 60px;
 height: auto;
 margin: 0 auto;
-padding-top: 30px;
 }
 
 @media (max-width: 400px)
