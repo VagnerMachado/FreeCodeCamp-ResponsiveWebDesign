@@ -5,7 +5,6 @@ h1, h2
   text-align: center;
 }
 
-
 #welcome-section
 {
   height: 100vh;
@@ -14,7 +13,7 @@ h1, h2
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30vh;
+  padding-top: 15vh;
   background-color: rgba(240, 248, 255, 0.9);
   margin-bottom: 1rem;
   border-radius: 3rem;
@@ -27,6 +26,11 @@ h1, h2
   background-color: rgba(240, 248, 255, 0.9);
   border-radius: 3rem;
   padding: 2rem;
+}
+
+.stack
+{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #pic
@@ -53,11 +57,18 @@ h1, h2
 
 .project-tile > img
 {
-width: 300px;
-height: 180px;
+width: 400px;
+height: 230px;
 object-fit: cover;
 margin: 1rem;
 
+}
+
+.project-tile > p
+{
+    width: 400px;
+    text-align: justify;
+    margin: 1rem;
 }
 
 .project-tile
@@ -96,6 +107,13 @@ header
     top: 0;
     border-radius: 3rem;
 } 
+
+.line
+{
+    height:1px;
+    width: 60%;
+    background-color:  rgb(80, 164, 216);
+}
 
 .description
 {
@@ -142,5 +160,11 @@ margin: 0 auto;
     flex-direction: column;
     place-items: center;
     padding: 1rem;
+}
+.project-tile > p
+{
+    width: 200px;
+    text-align: justify;
+    margin: 1rem;
 }
 }
